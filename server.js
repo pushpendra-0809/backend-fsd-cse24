@@ -1,9 +1,12 @@
-//create my own server using http module
+// Create our own server using HTTP module
+
 import http from "http";
-const server=http.createServer((req,res)=>{
-res.write("welcome to my server");
- res.end();
-})
-server.listen(8000,()=>{
-    console.log("server is running on port 8000");
-})
+
+const server = http.createServer((req, res) => {
+    res.write("Welcome to my server");
+    res.end();
+});
+
+server.listen(8000, () => {
+    console.log("Server is running on port 8000");
+});
